@@ -1,0 +1,181 @@
+/*
+
+Add styles or override variables from the theme here.
+
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Lora:400,700|Roboto+Mono:300,400');
+@import url('https://cdn.mediavine.com/fonts/ProximaNova/stylesheet.css');
+
+
+/* Stylize the article TOC */
+
+.td-sidebar-toc h4 {
+	font-size: 16px !important;
+	font-weight: 700 !important;
+	border-bottom: 1px solid #000 !important;
+	padding-bottom: 10px !important;
+}
+
+.td-toc #TableOfContents {
+	padding-left: 10px !important;
+}
+.td-toc #TableOfContents a {
+	font-size: 14px !important;
+	font-style: italic !important;
+}
+/* Change colors on alerts */
+
+.alert-primary {
+	border-color: #4A8CF0 !important;
+}
+
+.alert-primary .alert-heading {
+	color: #4A8CF0 !important;
+}
+/* Disable breadcrumb for single pages */
+.td-breadcrumbs__single { display: none !important; }
+
+/* Style navbar logo and add sidebar and home logos for branding */
+
+.sidebar-logo, .home-logo {
+	display: block;
+	margin-bottom: 10px;
+	padding-top: 10px;
+}
+
+.home-logo {
+	padding-bottom: 20px;
+}
+
+.sidebar-logo img {
+	max-width: 100%;
+}
+
+.home-logo img {
+	max-width: 60%;
+}
+
+a.navbar-brand {
+	/* display: none; */
+}
+
+/* navbar */
+span.navbar-brand__name {
+	font-size: 1.125em;
+	vertical-align: middle;
+}
+span.navbar-brand__logo {
+	margin-right: 5px;
+	vertical-align: middle;
+}
+
+span.navbar-brand__logo.navbar-logo svg {
+	width: 50px;
+}
+
+/* Change color of links for accessibility */
+
+a, div.alert > code {
+	color: #4A8CF0;
+}
+
+div.alert > a {
+	font-weight: 700;
+}
+
+.td-sidebar-nav a:hover, .td-content a:hover {
+	color: #4A8CF0 !important;
+}
+
+.td-sidebar-nav-active-item {
+	color: #4A8CF0 !important;
+}
+
+.td-content a {
+	text-decoration: underline !important;
+}
+
+.td-content h1 a, .td-content h2 a, .td-content h3 a, .td-content h4 a, .td-content h5 a, .td-content h6 a {
+	text-decoration: none !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+	color: #fff;
+}
+
+.navbar-dark .navbar-nav .show>.nav-link, .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .nav-link.active {
+	font-weight: 300 !important;
+}
+
+/* Change color of home page links on color background */
+
+.td-box--secondary p > a {
+	color: #5A71AD !important;
+	font-weight: 700 !important;
+}
+
+/* Change color of privacy link on home page for accessibility */
+.privacy a {
+	color: #ffffff;
+}
+
+/* Hide repo links */
+
+.td-page-meta--view { display: none !important; }
+.td-page-meta--edit { display: none !important; }
+.td-page-meta--child { display: none !important; }
+.td-page-meta--issue { display: none !important; }
+.td-page-meta--project-issue { display: none !important; }
+
+/* Hide RSS button */
+
+.td-rss-button { display: none !important; }
+
+/* Change navbar weight */
+
+.td-navbar .nav-link {
+	font-weight: 400 !important;
+}
+
+/* Code in Filter reference */
+h3 .mv_code { 
+	font-weight: 700;
+	color: #5870AC !important;
+ }
+ 
+/* Proxima Nova thin */
+span.pn_thin{
+	font-weight: 100 !important;
+}
+
+/* Reduce space between H2s and the preceding paragraphs */
+
+.td-content > h2:not(:first-child) {
+	margin-top: 1.5rem;
+}
+
+/* Reduce weight of alerts */
+
+.alert {
+	font-weight: 300;
+}
+
+/* Modify spacing for alerts in lists */
+
+.td-content ul + .alert:not(:first-child) {
+	margin-left: 40px;
+}
+
+/* Modify spacing for all alerts */
+
+.td-content .alert:not(:first-child) {
+	margin-top: .5rem;
+	margin-bottom: 1rem;
+}
+
+/* Modify margins for images in content */
+
+.td-content img {
+	margin-bottom: 1em;
+}

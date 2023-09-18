@@ -1,0 +1,10 @@
+{{ if not .Params.notoc -}}
+  {{ with .TableOfContents -}}
+    {{ if ne . `<nav id="TableOfContents"></nav>` -}}
+    <h4>In This Article</h4>
+      <div class="td-toc">
+        {{ . }}
+      </div>
+    {{ end -}}
+  {{ end -}}
+{{ end -}}
